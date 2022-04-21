@@ -35,13 +35,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -62,11 +55,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   builder: (BuildContext context) {
                     return Container(
                         width: MediaQuery.of(context).size.width,
-                        margin: EdgeInsets.symmetric(horizontal: 5.0),
-                        decoration: BoxDecoration(
+                        margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                        decoration: const BoxDecoration(
                             color: Colors.amber
                         ),
-                        child: /**/Text('text $i', style: TextStyle(fontSize: 16.0),)
+                        child: Text('text $i', style: const TextStyle(fontSize: 16.0),)
                     );
                   },
                 );
